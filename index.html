@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header> 
+    <header class="header"> 
         <figure class="logo">
             <img src="img/logo.png" alt="logo">
         </figure>
-        <nav> 
+        <nav class="menu"> 
             <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#eventos">Experiencia</a></li>
-                <li><a href="#contacto">Contáctame</a></li>
+                <li class="menu_item"><a class="menu_link" href="#portfolio">Portfolio</a></li>
+                <li class="menu_item"><a class="menu_link" href="#eventos">Experiencia</a></li>
+                <li class="menu_item"><a class="menu_link" href="#contacto">Contáctame</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="seccion_Principal">
+    <section class="sec_principal">
         <h1>
             Hola! Soy <strong>Dimartvil</strong>
             <br/>Desarrollador<strong>Javascript</strong>
@@ -33,41 +33,45 @@
     <section id="portfolio" class="sec_portfolio">
         <h2>Proyectos Destacados</h2>
             <article class="project">
-                <h3 class="name_project">Título de proyecto</h3>
-                <p class="tec_project">Tecnología</p>
-                <p class="date_project"><strong>Fecha: </strong>01/01/2020</p>
-                <p class="ref_project"><strong>Puedes verlo en: </strong><a href="">URL</a></p>
-                <p class="desc_project">Descripción del proyecto</p>
-                <img class="sample_project" src="" alt="project_sample">
+                <h3 class="project_name">Título de proyecto</h3>
+                <p class="project_tec">Tecnología</p>
+                <p class="project_date"><strong>Fecha: </strong>01/01/2020</p>
+                <p class="project_ref"><strong>Puedes verlo en: </strong><a href="">URL</a></p>
+                <p class="project_desc">Descripción del proyecto</p>
+                <figure class="project_sampleContaner">
+                    <img class="project_sample" src="" alt="project_sample">
+                </figure>
             </article>
     </section>
 
     <section id="eventos" class="sec_eventos">
         <h2>Más sobre mi experiencia</h2>
-        <article class="evento">
-            <figure class="head_event">
-                <img class="img_event" src="" alt="event_sample">
+        <article class="event">
+            <figure class="event_imageContainer">
+                <img class="event_image" src="" alt="event_sample">
             </figure>
-            <h3 class="name_event">Título del evento</h3>
-            <p class="desc_event">Descripción del evento</p>
-            <button class="button_event">
-                <a class="link_event" href="">Más sobre el evento</a>
+            <h3 class="event_name">Título del evento</h3>
+            <p class="event_desc">Descripción del evento</p>
+            <button class="event_button">
+                <a class="event_link" href="">Más sobre el evento</a>
             </button>
         </article>
     </section>  
   
     <section id="contacto"class="sec_contacto">
         <h2>¿Creamos algo juntos?</h2>
-        <form class="formulario"action="/suscripcion/">
+        <form class="form_email"action="/suscripcion/">
             <input type="text" placeholder="Déjame tu email" id="email">
-            <button class="send_form">Enviar</button>
+            <button>Enviar</button>
         </form>
-        <figure>
+        <figure class="social_networks">
             <img src="" alt="twitter">
             <img src="" alt="facebook">
             <img src="" alt="github">
             <img src="" alt="instagram">
         </figure>   
-    </section>  
+    </section>
+    
+    <footer></footer>  
 </body>
 </html>
