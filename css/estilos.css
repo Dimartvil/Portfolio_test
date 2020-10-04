@@ -13,3 +13,16 @@ h1{
     line-height: 1.2;
     letter-spacing: -.2px;
 }
+.sec_principal{
+    height: 300px;
+}
+.project_details{
+    width: 500px;
+}
+.project_imageContainer{
+    width: 500px;
+}
+.project_image{
+    width: 500px;
+}
+
