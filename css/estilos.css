@@ -41,6 +41,10 @@ h1 strong {
     background-position: right;
 }
 
+.project{
+ border:1px solid gray;
+ border-radius: 10px; 
+}
 .project_details{
     width: 500px;
 }
@@ -50,4 +54,6 @@ h1 strong {
 .project_image{
     width: 500px;
 }
+
+
 
