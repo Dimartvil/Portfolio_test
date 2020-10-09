@@ -1,5 +1,5 @@
 body{
-    background: #2e7fdda1;
+    background: white;
     margin:0;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -39,17 +39,22 @@ h1 strong {
 }
 .sec_principal{
     height: 300px;
-    background-color: #1b2127;
+    background-color: #1d252c;
     background-image: url('../img/imagen_principal_banner.jpg');
     background-size: 750px 417px;
     background-repeat: no-repeat;
     background-position: right;
 }
-
+.sec_portfolio{
+ background-color: #fafafa;
+}
 .project{
  border:1px solid gray;
  border-radius: 10px; 
+ margin:10px;
  margin-bottom: 15px;
+ padding: 50px;
+ background-color: white;
 }
 .project_details{
     width: 500px;
