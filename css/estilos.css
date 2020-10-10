@@ -28,7 +28,7 @@ h1 strong {
 }
 
 .header{
-    background-color: #cdfafa;
+    background-color: #026fff;
     margin:0;
     color: black;
     display: flex;
@@ -49,7 +49,8 @@ h1 strong {
     height: inherit;
 }
 .menu_link{
-    color: black;;
+    font-weight: bold;
+    color: white;
     text-decoration: none;
     height: inherit;
     display:flex;
@@ -66,6 +67,8 @@ h1 strong {
     background-size: 750px 417px;
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    align-items: center;
 }
 .sec_portfolio{
  background-color: #fafafa;
@@ -84,9 +87,9 @@ h1 strong {
 .project_imageContainer{
     width: 500px;
 }
-.project_image{
+/* .project_image{
     width: 500px;
-}
+} */
 
 
 
