@@ -35,6 +35,7 @@ h1 strong {
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    width: 100%;
 }
 .menu{
     height: inherit;
@@ -55,10 +56,10 @@ h1 strong {
     height: inherit;
     display:flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 .logo{
-    margin:0;
+    margin:0 30px;
 }
 .sec_principal{
     height: 300px;
@@ -87,9 +88,21 @@ h1 strong {
 .project_imageContainer{
     width: 500px;
 }
-/* .project_image{
+.project_image{
     width: 500px;
-} */
+}
 
-
+.footer{
+    background-color: #1d252c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 50px;
+    color: white;
+    font-size: 25px;
+}
+.footer a{
+    color: #026fff;
+}
 
