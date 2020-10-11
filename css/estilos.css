@@ -21,6 +21,7 @@ h1{
     letter-spacing: -.2px;
     color: white;
     margin: 0;
+    margin-left: 40px;
 }
 
 h1 strong {
@@ -178,6 +179,85 @@ h2{
     font-weight: bold;
     padding: 40px 90px;
     background-color: white;
+}
+
+.sec_contacto{
+    background-color: #026fff;
+    padding: 50px 100px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.sec_contacto h2{
+    color:white;
+    margin:0;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.form_email{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+}
+.email{
+    width: 350px;
+    height: 40px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 20px 5px 50px;
+    background-image: url(../img/envelop.svg);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x:15px;
+    font-size: 20px;
+}
+
+.enviar_email{
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent ;
+    color: white;
+    font-size: 20px;
+}
+.social_networks{
+    display: flex;
+    align-items: center;
+}
+.social_link{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 30px;
+  background-size: 80px 80px;
+}
+
+.social_link.twitter{
+    background-image: url('../img/twitter.svg');
+    background-repeat: no-repeat;
+}
+
+.social_link.facebook{
+    background-image: url('../img/facebook.svg');
+    background-repeat: no-repeat;
+}
+
+.social_link.github{
+    background-image: url('../img/github.svg');
+    background-repeat: no-repeat;
+}
+
+.social_link.instagram{
+    background-image: url('../img/instagram.svg');
+    background-repeat: no-repeat;
 }
 .footer{
     background-color: #1d252c;
