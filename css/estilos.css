@@ -26,7 +26,14 @@ h1{
 h1 strong {
     color: #026fff;
 }
-
+h2{
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #026fff;
+    font-size: 35px;
+    margin-bottom: 55px;
+}
 .header{
     background-color: #026fff;
     margin:0;
@@ -73,23 +80,40 @@ h1 strong {
 }
 .sec_portfolio{
  background-color: #fafafa;
+ padding: 25px;
 }
+
 .project{
  border:1px solid gray;
  border-radius: 10px; 
- margin:10px;
  margin-bottom: 15px;
- padding: 50px;
+ padding: 40px 30px;
  background-color: white;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ align-items: center;
+}
+.project strong{
+ font-weight: bold;
 }
 .project_details{
-    width: 500px;
+    width: 800px;
+    text-align: justify;
 }
+.project_name{
+  font-size: 40px;
+  margin: 5px 0;   
+}
+.project_tec, .project_date, .project_ref{
+  margin: 10px 0;
+}
+
 .project_imageContainer{
-    width: 500px;
+    width: 650px;
 }
 .project_image{
-    width: 500px;
+    width: 100%;
 }
 
 .footer{
