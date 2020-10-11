@@ -91,14 +91,14 @@ h2{
  background-color: white;
  display: flex;
  flex-flow: row wrap;
- justify-content: space-between;
+ justify-content: space-around;
  align-items: center;
 }
 .project strong{
  font-weight: bold;
 }
 .project_details{
-    width: 800px;
+    width: 600px;
     text-align: justify;
 }
 .project_name{
@@ -115,11 +115,74 @@ h2{
 .project_image{
     width: 100%;
 }
+.sec_eventos{
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sec_eventos h2{
+    display: block;
+    width: 100%;
+}
 
+.event{
+    width: 600px;
+    margin: 10px 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+}
+.event_imageContainer{
+    width: 600px;
+    margin: 0;
+}
+.event_image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event_details{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin:20px 40px;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+.event_desc{
+    text-align: left;
+}
+
+.event_button{
+    border: 2px solid #026fff;
+    border-radius: 5px;
+    height: 55px;
+    width: 250px; 
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+}
+
+.event_link{
+    color: #026fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding: 40px 90px;
+    background-color: white;
+}
 .footer{
     background-color: #1d252c;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 150px;
     padding: 0 50px;
