@@ -1,5 +1,5 @@
 body{
-    background: white;
+    background: red;
     margin:0;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -36,6 +36,7 @@ h2{
     margin-bottom: 55px;
 }
 .header{
+    flex: 1;
     background-color: #026fff;
     margin:0;
     color: black;
@@ -45,12 +46,16 @@ h2{
     align-items: center;
     height: 90px;
 }
+.logo{
+    margin:0 30px;
+}
 .menu{
     height: inherit;
 }
 .header ul{
     margin:0;
     display:flex;
+    flex-wrap: wrap;
     height: inherit;
 }
 
@@ -66,9 +71,7 @@ h2{
     align-items: center;
     padding: 0 50px;
 }
-.logo{
-    margin:0 30px;
-}
+
 .sec_principal{
     height: 300px;
     width: 100%;
@@ -290,14 +293,40 @@ h2{
 
 /* `Desktop First  */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1140px) {
+    .menu_link {
+        padding: 0px 38px;
+    }
 
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 1023px) {
+    .header{
+        display: block;
+        height:auto;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .menu ul{
+        justify-content: center;
+    }
+    .menu_link {
+        padding: 20px 15px;
+    }
 }
 
+@media screen and (max-width: 767px){
+ 
+    .menu ul{
+        display: block;
+    }
+
+    .menu_link{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 480px){
 
 }
