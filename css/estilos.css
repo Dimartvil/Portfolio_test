@@ -1,8 +1,9 @@
 body{
-    background: red;
+    background: white;
     margin:0;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 ol, ul{
     margin:0;
@@ -87,9 +88,11 @@ h2{
     align-items: center;
     flex-wrap: wrap;
 }
-.sec_principal h1 {
-    /* width: 100%; */
+/* .sec_principal h1 {
+    width: 100%; 
 }
+*/
+
 .img_principal{
     width: 500px;
     height: 300px;
@@ -147,15 +150,15 @@ h2{
 }
 
 .event{
-    width: 600px;
-    margin: 10px 60px;
+    width: 45%;
+    margin: 10px 20px;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
     background-color: #f4fbff;
 }
 .event_imageContainer{
-    width: 600px;
+    width: 100%;
     margin: 0;
 }
 .event_image{
@@ -187,6 +190,7 @@ h2{
     background-color: white;
     overflow: hidden;
     padding: 0;
+    cursor: pointer;
 }
 
 .event_link{
@@ -316,9 +320,12 @@ h2{
     .menu_link {
         padding: 20px 15px;
     }
+    .event_link{
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
  
     .menu ul{
         display: block;
@@ -327,13 +334,37 @@ h2{
     .menu_link{
         justify-content: center;
     }
+
+    .event{
+        width: 100%;
+        margin: 10px;
+    }
+    .event_details{
+        margin: 0;
+        margin: 20px 40px;
+        margin-top: -40px;
+    }
+
+    .event_button{
+   
+        width: 270px; 
+        padding: 0;
+    }
 }
 @media screen and (max-width: 480px){
-
+    .event_details{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 320px){
     .project_name {
         font-size: 28px;
+    }
+
+    .event_button{
+   
+        width: 100%; 
+        padding: 0;
     }
 }
