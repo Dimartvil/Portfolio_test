@@ -4,6 +4,7 @@ body{
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    width: 100%;
 }
 ol, ul{
     margin:0;
@@ -36,7 +37,10 @@ h2{
     font-size: 35px;
     margin-bottom: 55px;
 }
+
+/**********************CSS MENÚ******************/
 .header{
+    width: auto;
     flex: 1;
     background-color: #026fff;
     margin:0;
@@ -73,9 +77,11 @@ h2{
     padding: 0 50px;
 }
 
+/*****************FIN CSS MENÚ******************/
+
+/********CSS SECCIÓN PRINCIPAL******************/
 .sec_principal{
-    height: 300px;
-    width: 100%;
+    width: auto;
     background-color: #1d252c;
     /* background-image: url('../img/imagen_principal_banner.jpg');
     background-size: 750px 417px;
@@ -88,17 +94,24 @@ h2{
     align-items: center;
     flex-wrap: wrap;
 }
-/* .sec_principal h1 {
-    width: 100%; 
-}
-*/
+
+  .sec_principal h1 {
+    font-size:70px;
+    margin-left: 150px;
+} 
+
 
 .img_principal{
     width: 500px;
     height: 300px;
     object-fit: cover;
 }
+
+/***********FIN CSS SECCIÓN PRINCIPAL******************/
+
+/***********CSS SECCIÓN PORTFOLIO******************/
 .sec_portfolio{
+ width: auto;
  background-color: #fafafa;
  padding: 25px;
 }
@@ -137,12 +150,15 @@ h2{
 .project_image{
     width: 100%;
 }
+/***********FIN CSS SECCIÓN PORTFOLIO******************/
+
 .sec_eventos{
     padding: 25px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: auto;
 }
 .sec_eventos h2{
     display: block;
@@ -150,7 +166,8 @@ h2{
 }
 
 .event{
-    width: 45%;
+    width: 40%;
+    max-width: 750px;
     margin: 10px 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -186,7 +203,7 @@ h2{
     border: 2px solid #026fff;
     border-radius: 5px;
     height: 55px;
-    width: 250px; 
+    width: 250px;
     background-color: white;
     overflow: hidden;
     padding: 0;
@@ -204,27 +221,26 @@ h2{
 }
 
 .sec_contacto{
+    width: auto;
     background-color: #026fff;
     padding: 50px 100px;
     height: 200px;
     display: flex;
     text-align: center;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .sec_contacto h2{
     color:white;
     margin:0;
     display: block;
-    width: 100%;
     text-align: left;
 }
 .form_email{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 500px;
 }
 .email{
     width: 350px;
@@ -251,14 +267,23 @@ h2{
     font-size: 20px;
 }
 .social_networks{
+    width: 50%;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+.social_pair{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    justify-content: space-evenly;
+}
 .social_link{
-  display: inline-block;
   width: 80px;
   height: 80px;
-  margin: 0 30px;
+  margin: 20px 30px;
   background-size: 80px 80px;
 }
 
@@ -282,6 +307,7 @@ h2{
     background-repeat: no-repeat;
 }
 .footer{
+    width: auto;
     background-color: #1d252c;
     display: flex;
     flex-wrap: wrap;
@@ -298,9 +324,38 @@ h2{
 
 /* `Desktop First  */
 
+@media screen and (max-width: 1400px) {
+    .sec_principal h1 {
+        font-size: 60px;
+        margin-left: 20px;
+    }
+}
+
 @media screen and (max-width: 1140px) {
     .menu_link {
         padding: 0px 38px;
+    }
+    .sec_principal h1 {
+        font-size: 70px;
+    }
+
+    .sec_principal img {
+        width: 40%;
+        object-position: right;
+    }
+
+    .sec_principal{
+        height: 30vh;
+        justify-content: center;
+        text-align: center;
+    }
+    .sec_principal h1 {
+        margin: 0;
+        position: relative;
+    }
+    .sec_principal img {
+        position: absolute;
+        z-index: -999;
     }
 
 }
@@ -323,6 +378,10 @@ h2{
     .event_link{
         padding: 0;
     }
+    .sec_contacto{
+        padding: 50px 20px;
+    }
+    
 }
 
 @media screen and (max-width: 768px){
@@ -334,8 +393,9 @@ h2{
     .menu_link{
         justify-content: center;
     }
-
+ 
     .event{
+        max-width: 500px;
         width: 100%;
         margin: 10px;
     }
@@ -350,10 +410,41 @@ h2{
         width: 270px; 
         padding: 0;
     }
+    .sec_contacto{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .social_networks{
+        width: 100%;
+    }
+    .form_email{
+        height: 40%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form_email h2 {
+        text-align: center;
+    }
+
+    .sec_principal h1 {
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 480px){
     .event_details{
         margin: 0;
+    }
+
+    .email{
+        width: 70%;
+    }
+    .sec_principal h1 {
+        font-size: 40px;
     }
 }
 
@@ -367,4 +458,22 @@ h2{
         width: 100%; 
         padding: 0;
     }
+
+    .email{
+        width: 70%;
+    }
+    
+    .contacto, .credits{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sec_principal h1{
+        font-size: 30px;
+    }
+
+    .footer{
+        padding: 20px ;
+    }
+
 }
