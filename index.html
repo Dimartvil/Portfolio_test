@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="header"> 
+    <i id="menu_button" class="icon-menu menu-button" ></i>
+    <header class="header"  > 
         <figure class="logo">
             <img src="img/logo.png" alt="logo">
         </figure>
-        <nav class="menu"> 
-            <ul>
+        <nav class="menu" id="menu"  > 
+            <ul >
                 <li class="menu_item"><a class="menu_link" href="#userPersona">User Persona</a></li>
                 <li class="menu_item"><a class="menu_link" href="#eventos">Experiencia</a></li>
                 <li class="menu_item"><a class="menu_link" href="#conocimientos">Conocimientos</a></li>
@@ -24,7 +25,7 @@
         </nav>
     </header>
 
-    <section class="sec_principal">
+    <section class="sec_principal" >
         <h1>
             Hola! Soy <strong>Dimartvil</strong>
             <br/>Desarrollador <strong>JavaScript</strong>
@@ -182,5 +183,17 @@
             <p>Developed by <a href="">@dimartvil</a></p>
         </div>
     </footer>  
+
+    <script type="text/JavaScript">
+        const MENU = document.getElementById('menu');
+        const MENU_BUTTON = document.getElementById('menu_button')
+        const RESPONSIVE = window.matchMedia('screen and (max-width: 768px')
+
+        MENU_BUTTON.addEventListener('click',() =>{
+            MENU.classList.contains('menu_fixed') 
+            ?  MENU.classList.remove('menu_fixed') 
+            :  MENU.classList.add('menu_fixed')
+        })   
+    </script>
 </body>
 </html>
